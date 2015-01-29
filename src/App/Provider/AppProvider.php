@@ -14,11 +14,9 @@ class AppProvider extends \Bono\Provider\Provider
 
 	        /********** List **********/
 	        $listModel = Norm::factory('List');
-	        $listData = $listModel->find()->sort(array('bulan' => 1, 'tanggal' => 1));
-	        // $aircrafts = Norm::factory('List')->find()->group_by('tanggal');
-	        // echo "<pre>";
-	        // var_dump($aircrafts);
-	        // exit();       
+	        $listData = $listModel->find();
+	        // $listData = $listModel->find()->sort(array('bulan' => 1, 'tanggal' => 1));
+	        // $aircrafts = Norm::factory('List')->find()->group_by('tanggal');     
 	        $dataList = array();
 	        foreach ($listData as $key => $list) {
 	            $dataList[] = $list->toArray();

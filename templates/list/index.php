@@ -1,9 +1,11 @@
 <section id="body">
     <div>
         <h2 style="font-family: initial;">Welcome to the financial monitoring applications. This application is useful for your financial records.</h2>
-        <?php foreach ($dataList as $val): ?>
-        <span class="show_2014"><H2 id="show"><?php echo $val['tahun'] ?></H2></span><span class="hide_2014"><H2 id="show"><?php echo $val['tahun'] ?></H2></span>
-        <?php endforeach ?>
+        <?php if (!empty($dataList)): ?>
+            <?php //foreach ($dataList as $val): ?>
+            <span class="show_2014"><H2 id="show">2015</H2></span><span class="hide_2014"><H2 id="show">2015</H2></span>
+            <?php //endforeach ?>
+        <?php endif ?>
             <div id="spoiler_2014">
                 <div class="table-container">
                     <table class="table nowrap stripped hover" width="100%">
@@ -18,16 +20,16 @@
                         </thead>
                         <tbody>
                         <?php $total_d = ""; $total_k = ""; $total_j = ""; ?>
-                        <?php if (!empty($dataList)): ?>                            
+                        <?php if (!empty($dataList)): ?>
                             <?php foreach ($dataList as $val): ?>
                                 <tr>
-                                    <td><?php echo $val['tanggal']; ?>/<?php echo $val['bulan']; ?></td>
+                                    <td align="center"><?php echo $val['tanggal']; ?></td>
                                     <td><?php echo $val['keterangan']; ?></td>
                                     <td align="right">Rp <?php echo number_format($val['pemasukan'],0,'','.').",-"; ?></td>
                                     <td align="right">Rp <?php echo number_format($val['pengeluaran'],0,'','.').",-"; ?></td>
                                     <td align="center">
-                                        <a href="<?php echo URL::site('/list/'.$val['$id'].'/update') ?>">Edit</a> &nbsp;
-                                        <a href="<?php echo URL::site('/list/'.$val['$id'].'/delete') ?>">Delete</a>
+                                        <a style="color:#4043C3" href="<?php echo URL::site('/list/'.$val['$id'].'/update') ?>">Edit</a> &nbsp;
+                                        <a style="color:#4043C3" href="<?php echo URL::site('/list/'.$val['$id'].'/delete') ?>">Delete</a>
                                     </td>
                                 </tr>
                             <?php 
