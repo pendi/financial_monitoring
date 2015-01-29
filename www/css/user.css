@@ -1,0 +1,64 @@
+/*!
+ * Start Bootstrap - Logo Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+.show_2014, .hide_2014 {
+	/*background: black;*/
+	margin: 5px;
+	display: inline-block;
+	padding: 0 5px;
+	/*border-radius: 10px;*/
+	text-decoration: none;
+	color: #13C4FF;
+	cursor: pointer;
+}
+
+.show_2014:hover, .hide_2014:hover {
+	/*background: black;*/
+	margin: 5px;
+	display: inline-block;
+	padding: 0 5px;
+	/*border-radius: 10px;*/
+	text-decoration: none;
+	color: #4A93B8;
+	cursor: pointer;
+}
+
+#spoiler_2014 {
+	width: 100%;
+	background: none;
+	/*border: 1px solid #aaa;*/
+	/*padding: 15px;*/
+	border-radius: 4px;
+}
+
+h2#show {
+	background-color: #000;
+	padding-left: 20px;
+	border-radius: 10px;
+	width: 100px;
+}

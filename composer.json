@@ -1,0 +1,35 @@
+{
+    "name": "xinix-technology/bono-arch",
+    "description": "Bono Archetype",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ganesha",
+            "email": "reekoheek@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "ssh://tig@xinix.co.id:22033/mcoin/naked2-theme.git"
+        }
+    ],
+    "require": {
+        "xinix-technology/bono": "dev-master",
+        "xinix-technology/norm": "dev-master",
+        "xinix-technology/migrate": "~0.1.0",
+        "xinix-technology/naked2-theme": "dev-master",
+        "reekoheek/bono-auth": "~0.1.6",
+        "reekoheek/bootstrap-theme": "dev-master",
+        "reekoheek/norm-fdb": "dev-master",
+        "krisanalfa/bono-blade": "dev-master",
+        "krisanalfa/blade-theme": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "App": "src/",
+            "Bono": "/var/www/autoload/bono/src",
+            "Norm": "/var/www/autoload/norm/src"
+        }
+    }
+}
