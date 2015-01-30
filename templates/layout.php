@@ -8,10 +8,15 @@
     <!-- <link rel="stylesheet" type="text/css" href="<?php //echo URL::base('vendor/bootstrap/css/bootstrap-theme.css') ?>"> -->
     <!-- <link rel="stylesheet" type="text/css" href="<?php //echo URL::base('css/jquery-1.11.0.min.js') ?>"> -->
     <script type="text/javascript" src="<?php //echo URL::base('js/jquery-1.7.1.min.js') ?>"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css">  
+    <link rel="stylesheet" href="/resources/demos/style.css">  -->
+    <link type="text/css" rel="stylesheet" href="<?php echo URL::base('datepicker/themes/ui-lightness/ui.all.css') ?>" />
+    <script src="<?php echo URL::base('datepicker/jquery-1.8.0.min.js') ?>"></script>
+    <script src="<?php echo URL::base('datepicker/ui/ui.core.js') ?>"></script>
+    <script src="<?php echo URL::base('datepicker/ui/ui.datepicker.js') ?>"></script>
+    <script src="<?php echo URL::base('datepicker/ui/i18n/ui.datepicker-id.js') ?>"></script> 
 </head>
 <body bgcolor="#D0D0D0">
 <nav class="navbar-menu">

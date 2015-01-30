@@ -40,8 +40,12 @@ $form = Form::create()->of($entry);
 </form>
 
 <script type="text/javascript">
-    $(function() {
-        $( "#datepicker" ).datepicker();
+    $(document).ready(function(){
+        $("#datepicker").datepicker({
+            dateFormat : "dd/mm/yy",
+            // changeMonth : true,
+            // changeYear : true
+        });
     });
 
     function validasi(form) {

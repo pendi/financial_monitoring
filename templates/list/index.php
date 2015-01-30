@@ -1,6 +1,6 @@
 <section id="body">
     <div>
-        <h2 style="font-family: initial;">Welcome to the financial monitoring applications. This application is useful for your financial records.</h2>
+        <h2 style="font-family: initial;">Welcome to the Financial Monitoring Applications. This application is useful for your financial records.</h2>
         <?php if (!empty($dataList)): ?>
             <?php //foreach ($dataList as $val): ?>
             <span class="show_2014"><H2 id="show">2015</H2></span><span class="hide_2014"><H2 id="show">2015</H2></span>
@@ -39,7 +39,7 @@
                             ?>
                             <?php endforeach ?>
                         <?php endif ?>
-                        <?php if (!empty($total_j)): ?> 
+                        <?php if (!empty($dataList)): ?> 
                             <tr>
                                 <th colspan="2">Total</th>
                                 <th>Rp <?php echo number_format($total_d,0,'','.').",-"; ?></th>

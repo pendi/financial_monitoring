@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="span-12">
                     <label>Note</label>
-                    <textarea placeholder="Keterangan" name="keterangan" autofocus></textarea>
+                    <textarea placeholder="Note" name="keterangan" autofocus></textarea>
                 </div>
             </div>
             <div class="row">
@@ -32,9 +32,17 @@
     </form> 
 </div>
 <script type="text/javascript">
-    $(function() {
-        $( "#datepicker" ).datepicker();
+    $(document).ready(function(){
+        $("#datepicker").datepicker({
+            dateFormat : "dd/mm/yy",
+            // changeMonth : true,
+            // changeYear : true
+        });
     });
+    
+    // $(function() {
+    //     $( "#datepicker" ).datepicker();
+    // });
 
     function validasi(form) {
         if (form.keterangan.value == 0){
